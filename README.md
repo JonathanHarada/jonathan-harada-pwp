@@ -1,2 +1,2 @@
 # jonathan-harada-pwp
-My PWP project
+My Personal Website Project
