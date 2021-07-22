@@ -1,3 +1,5 @@
+/*Added basic stylings for content flow*/
+
 body{
     margin: 0;
     text-align: center;
@@ -23,4 +25,8 @@ p{
 ul{
     list-style: inside;
     display: inline-block;
+}
+
+.page-2{
+    background-color: red;
 }
