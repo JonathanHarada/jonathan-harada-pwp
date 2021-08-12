@@ -35,28 +35,29 @@
 <!--Body 1-->
 
     <div class="container">
-    <div class="row mt-5 ms-5">
-        <div class="col-md-4 m-5 ps-5 fw-bold fs-2">
-            <p>HTML5 CSS JavaScript</p>
-            <p>BootStrap React GitHub</p>
-            <p>MySQL Docker Git</p>
-        </div>
-        <div class="col-md-3 ms-5">
-            <img class="mt-5 ms-5 border border-dark rounded-circle img-responsive img-fluid" src="images/fullsize.jpg" alt="picture of jonathan"/>
-        </div>
-        <div class="col-md-3 justify-content-center mt-5 pt-5">
+        <div class="row mt-5">
+            <div class="col-md-4 m-md-5 fw-bold fs-2">
+                <p>HTML5 CSS JavaScript</p>
+                <p>BootStrap React GitHub</p>
+                <p>MySQL Docker Git</p>
+            </div>
+            <div class="col-md-3">
+            <img class="mt-5 ms-5 border border-dark rounded-circle img-responsive img-fluid" src="images/fullsize.jpg"                         alt="picture of jonathan"/>
+            </div>
+        <div class="col-md-3 justify-content-center mt-5 pt-5 ms-md-3">
             <h2 class="fw-bold fs-1">Jonathan Harada</h2>
             <p class="fs-4">Full Stack Web Developer</p>
         </div>
-    </div>
+         </div>
     </div>
 
 
-<!--Body 2-->
+<!--Body 2 1st Carousel-->
+
 <h1 class="m-5 text-center">About me Professionally</h1>
 
-<section class="d-md-flex justify-content-evenly">
-    <div class="container row">
+<div class="d-md-flex justify-content-evenly container ">
+    <div class="row">
         <div id="myCarousel" class="col-md-4 w-30 h-30 carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -78,7 +79,7 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-    <div class="col-md-5 ms-5">
+    <div class="col-md-5 ms-md-5">
         <p>I recently completed the CNM Ingenuity Full Stack Bootcamp.</p>
         <p>During this bootcamp I collaborated with a team of 4 utilizing github, HTML5, CSS, BootSTrap, Javascript, React, MySQL and Docker to create a fully functional            web application.</p>
         <p>Our teams goal was to create an easy to use application that search's our database for information regarding the first steps of applying for a scholarship.</p>
@@ -87,12 +88,15 @@
         <p>I strongly believe that this experience has allowed me to grow into an excellent teammate for any team.</p>
     </div>
     </div>
-</section>
+</div>
+
+
+<!--Body 2 Second Carousel-->
 
 <h1 class="m-5 text-center">About me Personally</h1>
 
 <section class="d-md-flex justify-content-evenly">
-    <div class="container row ms-5">
+    <div class="container row ms-md-5">
         <div class="col-md-5">
             <p>While I do remain committed to work no matter what stage my career is in, I also believe it's important to balance work life and home life.</p>
             <p>There are many things outside of work that are very important to me.</p>
@@ -166,38 +170,42 @@
     </div>
     </div>
 
-<!--Contact Form-->
+<!--My Contact Info-->
 <h1 id="contactMe" class="m-5 text-center">Contact Me</h1>
 
-    <div class="d-md-flex container align-self-center">
-        <div class="text-center">
+    <div class="container text-center">
+        <div>
             <p>Phone: 505-917-0442</p>
             <p>Direct E-Mail: JNHarada@msn.com</p>
             <p><a href="https://github.com/JonathanHarada">My GitHub</a></p>
             <p><a href="https://www.linkedin.com/in/jonathan-harada-9b5a9a1a3/">My LinkIn</a></p>
             <p>Or Submit Contact Form:</p>
         </div>
-        <div class="m-5">
-            <form action="" method="get" class="form-example">
-                <div class="form-example">
-                    <label for="name">Enter your name: </label>
-                    <input type="text" name="name" id="name" size="70" required>
-                </div>
-                <div class="form-example">
-                    <label for="email">Enter your email: </label>
-                    <input type="email" name="email" id="email" size="70" required>
-                </div>
-                <label for="story">Leave a Message:</label>
-
-                <textarea id="story" name="story"
-                          rows="8" cols="72">
-                </textarea>
-                <div class="form-example text-center">
-                    <input type="submit" value="Send">
-                </div>
-            </form>
-        </div>
     </div>
+
+<!--Contact Form-->
+
+<div class="container">
+    <div class="mb-3">
+        <label class="form-label">Name:</label>
+        <input type="name" class="form-control" id="exampleFormControlInput1">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">E-mail Address:</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Leave a Message:</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="8"></textarea>
+    </div>
+    <button type="button" class="btn btn-danger mb-3">Submit</button>
+</div>
+
+
+
+
+
+
 
 
 
