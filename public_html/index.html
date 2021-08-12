@@ -13,28 +13,29 @@
 
 <!--Navbar-->
 
-    <nav class="navbar navbar-expand-md navbar-light bg-light ps-5">
+    <nav class="sticky-top navbar navbar-expand-md navbar-light bg-light ps-5">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    <a class="nav-link" href="#">About Me</a>
-                    <a class="nav-link" href="#">Portfolio</a>
+                    <a class="nav-link active" aria-current="page" href="#top">Home</a>
+                    <a class="nav-link" href="#aboutMe">About Me</a>
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                </div>
+                <div class="ms-md-5 ps-md-5">
+                    <a class="btn btn-primary" href="#contactMe" role="button">Contact Me</a>
                 </div>
             </div>
-            <div class="navbar-expand-md text-center" id="center">
-                <a class="nav-link" href="#contactMe">Contact me</a>
-            </div>
+        </div>
         </div>
     </nav>
 
 
 <!--Body 1-->
 
-    <div class="container">
+    <div class="container" id="top">
         <div class="row mt-5">
             <div class="col-md-4 m-md-5 fw-bold fs-2">
                 <p>HTML5 CSS JavaScript</p>
@@ -54,20 +55,20 @@
 
 <!--Body 2 1st Carousel-->
 
-<h1 class="m-5 text-center">About me Professionally</h1>
+<h1 class="m-5 text-center" id="aboutMe">About me Professionally</h1>
 
 <div class="d-md-flex justify-content-evenly container ">
     <div class="row">
         <div id="myCarousel" class="col-md-4 w-30 h-30 carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="./images/myface.jpg" class="d-block w-100 h-100" alt="...">
+                <img src="./images/small-pic.png" class="d-block w-100 h-100" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="./images/myface.jpg" class="d-block w-100 h-100" alt="...">
+                <img src="./images/small-pic.png" class="d-block w-100 h-100" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="./images/myface.jpg" class="d-block w-100 h-100" alt="...">
+                <img src="./images/small-pic.png" class="d-block w-100 h-100" alt="...">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
@@ -83,7 +84,8 @@
         <p>I recently completed the CNM Ingenuity Full Stack Bootcamp.</p>
         <p>During this bootcamp I collaborated with a team of 4 utilizing github, HTML5, CSS, BootSTrap, Javascript, React, MySQL and Docker to create a fully functional            web application.</p>
         <p>Our teams goal was to create an easy to use application that search's our database for information regarding the first steps of applying for a scholarship.</p>
-        <p>Prior to starting my career in software development, I worked for 10 years with local non-profits and restaurants.</p>
+        <p>Prior to starting my career in software development, I worked for 10 years with local non-profits assisting people with disabilities. I also helped my sister
+           start her own business.</p>
         <p>I have over 10 years of management experience.</p>
         <p>I strongly believe that this experience has allowed me to grow into an excellent teammate for any team.</p>
     </div>
@@ -108,13 +110,13 @@
         <div id="myCarousel2" class="col-md-4 w-30 h-30 carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="./images/myface.jpg" class="d-block w-100 h-100" alt="...">
+                    <img src="./images/me-hike%201.png" class="d-block w-100 h-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="./images/myface.jpg" class="d-block w-100 h-100" alt="...">
+                    <img src="./images/me-bella-hike%201.jpg" class="d-block w-100 h-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="./images/myface.jpg" class="d-block w-100 h-100" alt="...">
+                    <img src="./images/me-bella%201.jpg" class="d-block w-100 h-100" alt="...">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel2" data-bs-slide="prev">
@@ -130,7 +132,7 @@
 </section>
 
 <!--Body 3-->
-<h1 class="m-5 text-center">Portfolio</h1>
+<h1 class="m-5 text-center" id="portfolio">Portfolio</h1>
 
     <div class="container d-md-flex">
     <div class="d-md-block container">
@@ -151,7 +153,7 @@
                 www.linktobeyonborders.com
             </p>
             <p class="col-md-8">
-                This is a link to a website I volunteered to work on for a local non-profit who assists young people to restart their lives.
+                This is a link to a website I volunteered to work on for a local non-profit who assists young people in restarting their lives.
                 I utilized HTML5 - CSS - JavaScript - Bootstrap and other software in the development of this project.
             </p>
         </div>
@@ -160,7 +162,7 @@
     <div class="d-md-block container">
         <div>
             <p class="col-md-4">
-                www.linktocapstoneproject.com
+                www.linktoeithergithuborlastproject
             </p>
             <p class="col-md-8">
                 This is a direct link to my Github just in case I don't have anything else ready to display by the time this site goes live.
