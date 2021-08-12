@@ -2,14 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
     <title>Jonathan Harada Personal Portfolio</title>
 </head>
-<body>
+<body id="top">
 
 <!--Navbar-->
 
@@ -25,29 +24,29 @@
                     <a class="nav-link" href="#portfolio">Portfolio</a>
                 </div>
                 <div class="ms-md-5 ps-md-5">
-                    <a class="btn btn-primary" href="#contactMe" role="button">Contact Me</a>
+                    <a class="btn test text-white" href="#contactMe" role="button">Contact Me</a>
                 </div>
             </div>
-        </div>
         </div>
     </nav>
 
 
 <!--Body 1-->
 
-    <div class="container" id="top">
+    <div class="container">
         <div class="row mt-5">
-            <div class="col-md-4 m-md-5 fw-bold fs-2">
-                <p>HTML5 CSS JavaScript</p>
-                <p>BootStrap React GitHub</p>
-                <p>MySQL Docker Git</p>
+            <div class="col-md-3 m-md-5 fw-bold">
+                <h2>Skills</h2>
+                <p>HTML5 - CSS - JavaScript</p>
+                <p>BootStrap - React</p>
+                <p>GitHub - MySQL - Docker</p>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-4">
             <img class="mt-5 ms-5 border border-dark rounded-circle img-responsive img-fluid" src="images/fullsize.jpg"                         alt="picture of jonathan"/>
             </div>
-        <div class="col-md-3 justify-content-center mt-5 pt-5 ms-md-3">
+        <div class="border border-dark rounded test col-md-3 justify-content-center mt-5 pt-5 ms-md-3">
             <h1 class="fw-bold">Jonathan Harada</h1>
-            <p class="fs-4">Full Stack Web Developer</p>
+            <p class="fs-3" id="aboutMe">Full Stack Web Developer</p>
         </div>
          </div>
     </div>
@@ -55,7 +54,7 @@
 
 <!--Body 2 1st Carousel-->
 
-<h1 class="test m-5 text-center" id="aboutMe">About me Professionally</h1>
+<h1 class="test m-5 text-center">About me Professionally</h1>
 
 <div class="d-md-flex justify-content-evenly container ">
     <div class="row">
@@ -123,7 +122,7 @@
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel2" data-bs-slide="next">
+            <button id="portfolio" class="carousel-control-next" type="button" data-bs-target="#myCarousel2" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
@@ -132,7 +131,7 @@
 </section>
 
 <!--Body 3-->
-<h1 class="test m-5 text-center" id="portfolio">Portfolio</h1>
+<h1 class="test m-5 text-center">Portfolio</h1>
 
     <div class="container d-md-flex">
     <div class="d-md-block container">
@@ -177,38 +176,34 @@
 
     <div class="container text-center">
         <div>
-            <p>Phone: 505-917-0442</p>
-            <p>Direct E-Mail: JNHarada@msn.com</p>
-            <p><a href="https://github.com/JonathanHarada">My GitHub</a></p>
-            <p><a href="https://www.linkedin.com/in/jonathan-harada-9b5a9a1a3/">My LinkIn</a></p>
-            <p>Or Submit Contact Form:</p>
+            <h2>Send Me a Message!</h2>
         </div>
     </div>
 
 <!--Contact Form-->
 
+<form id="form">
 <div class="container">
     <div class="mb-3">
-        <label class="form-label">Name:</label>
-        <input type="name" class="form-control" id="exampleFormControlInput1">
+        <label for="name" class="form-label">Name:</label>
+        <input type="text" class="form-control" id="name">
     </div>
     <div class="mb-3">
-        <label class="form-label">E-mail Address:</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1">
+        <label for="email" class="form-label">E-mail Address:</label>
+        <input type="text" class="form-control" id="email">
+    </div>
+    <div class="mb-3">
+        <label for="subject" class="form-label">Subject</label>
+        <input type="text" class="form-control" id="subject">
     </div>
     <div class="mb-3">
         <label class="form-label">Leave a Message:</label>
         <textarea class="form-control" id="exampleFormControlTextarea1" rows="8"></textarea>
     </div>
-    <button type="button" class="btn btn-danger mb-3">Submit</button>
+    <button type="submit" class="btn btn-danger mb-3">Submit</button>
 </div>
-
-
-
-
-
-
-
+</form>
+<div id="output-area"></div>
 
 
 <section class="bg-dark p-5">
@@ -218,6 +213,24 @@
     </footer>
 </section>
 
+
+<!--Make sure to use Jqueary min and not the slim version-->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script>
+<!--Bootstrap js-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<!--JQueary form, validate, additional methods-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.3.0/jquery.form.min.js" integrity="sha512-YUkaLm+KJ5lQXDBdqBqk7EVhJAdxRnVdT2vtCzwPHSweCzyMgYV/tgGF4/dCyqtCC2eCphz0lRQgatGVdfR0ww==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/additional-methods.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!--Google reCAPTCHA-->
+
+
+<!--custom jqueary script-->
+<script src="scripts.js"></script>
+
+
 </body>
 </html>
