@@ -1,6 +1,5 @@
 $(document).ready(function() {
-    document.getElementById('name')
-    $('#form').validate({
+    $('#contact').validate({
       debug:true,
         errorClass: 'alert alert-danger',
         ErrorLabelContainer: '#output-area',
@@ -33,10 +32,10 @@ $(document).ready(function() {
                 maxlength: 'Message must be 2000 characters or less'
             }
         },
-        submitHandler:() => {
-          $('#form').ajaxSubmit({
+        submitHandler: (form) => {
+          $('#contact').ajaxSubmit({
               type: 'POST',
-              url: $('#form').att('action'),
+              url: $('#contact').attr('action'),
               success: (ajaxOutput) => {
                   $("output-area").css('display', '')
                   $('output-area').html(ajaxOutput)
