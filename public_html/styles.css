@@ -8,5 +8,9 @@ body {
    background-color: #1F3146
 }
 
+.carousel {
+    width: 400px;
+    height: 400px;
+}
 
 

@@ -5,7 +5,7 @@ const Recaptcha = require('express-recaptcha').RecaptchaV2
 const formData = require('form-data')
 const Mailgun = require('mailgun.js')
 const mailgun = new Mailgun(formData)
-require('dotenv').config()
+
 
 
 const {check, validationResult} = require('express-validator')
@@ -35,10 +35,10 @@ const handleGetRequest = (req, res) => {
 
 const handlePostRequest = (req, res) => {
     res.append('Context-Type', 'text/html')
-    // res.header('Access-Control-Allow-Origin', '*')
+    res.append('Access-Control-Allow-Origin', '*')
 
     if (req.recaptcha.error) {
-        return response.send(
+        return res.send(
             `<div class='alert alert-danger' role='alert'><strong>Oh snap!</strong>There was an error with Recaptcha please try again</div>`
         )
     }
@@ -62,7 +62,7 @@ const handlePostRequest = (req, res) => {
     mg.messages.create(process.env.MAILGUN_DOMAIN, mailgunData)
         .then(msg =>
         res.send(
-            `<div class='alert alert-success' role='alert'>${JSON.stringify(msg)}</div>`
+            `<div class='alert alert-success' role='alert'>Email Successfully Sent</div>`
         )
         )
         .catch(err =>
